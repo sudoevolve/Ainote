@@ -16,6 +16,7 @@ qt_add_executable(appnote
     main.cpp
     notemanager.cpp
     notemanager.h
+    ${APP_ICON_RESOURCE_WINDOWS}
     ${APP_RESOURCES}
 )
 
@@ -31,6 +32,10 @@ qt_add_qml_module(appnote
         notemanager.h
         notemanager.cpp
 )
+
+if(WIN32)
+    set(APP_ICON_RESOURCE_WINDOWS "${CMAKE_CURRENT_SOURCE_DIR}/resources/app.rc")
+endif()
 
 set_target_properties(appnote PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
