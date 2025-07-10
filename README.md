@@ -105,3 +105,9 @@ note/
 ## 📄 开源许可
 
 本项目采用 [MIT](https://choosealicense.com/licenses/mit/) 许可。
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This project is developed based on the Qt open source framework, which is licensed under the LGPL 3.0 (or GPL depending on Qt version). For more information about Qt licensing, visit [https://www.qt.io/licensing](https://www.qt.io/licensing).
